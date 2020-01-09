@@ -13,7 +13,7 @@ body{
     background-image: url('../img/bcg2.png');
   	background-repeat: no-repeat;
   	background-attachment: fixed;  
-  	background-size: cover;
+	background-size: cover;
 
 }
 
@@ -55,6 +55,7 @@ ul.linki li{
 	background-color: #131313;
 	margin-bottom: 40px;
 	padding-bottom: 50px;
+	overflow: hidden;
 
 }
 
@@ -65,6 +66,9 @@ ul.linki li{
 	height: 120px;
 	background-color: #171717;
 	padding-top: 70px;
+	overflow: hidden;
+	position: relative;
+
 }
 
 .content1 p {
@@ -81,12 +85,19 @@ ul.linki li{
 
 .btn{
 	display: block;
-	margin-left: 310px;
+	margin-left: 290px;
 	margin-top: 20px;
-	padding: 5px;
+	padding: 10px 20px;
 	text-transform: uppercase;
+}
 
 
+
+#form1{
+    margin-left: 100px;
+	width: 700px;
+	overflow: hidden;
+	background-color: #171717;
 }
 
 
@@ -118,4 +129,332 @@ ul.linki li{
 	color: #ffb300;
     border-top: 1px solid #ffb300;
     cursor: pointer;
+}
+
+
+
+#regForm {
+	padding: 40px;
+}
+  
+h2 {
+	text-align: center;  
+}
+
+input {
+	padding: 8px 3px;
+	width: 150px;
+	font-size: 15px;
+	border: 1px solid #aaaaaa;
+	margin-top: 30px;
+	display: inline;
+
+}
+  
+  /* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color: #ffdddd;
+}
+
+.btn2{
+	display: inline;
+	text-transform: uppercase;
+}
+  
+  /* Hide all steps by default: */
+.tab {
+	display: none;
+	padding-bottom: 50px;
+}
+.tab p{
+	padding-left: 120px;
+	display: inline;
+}
+  
+button {
+	background-color: #ffb300;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background-color: #ffc100;
+}
+
+#prevBtn {
+	background-color: #bbbbbb;	
+}
+
+#prevBtn:hover{
+	background-color: #cdcdcd;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;  
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: #4CAF50;
+}
+
+
+.listofmeals{
+	height: 380px;
+	overflow: hidden;
+	font-size: 13px;
+	color: #ffc100;
+	width: 620px;
+	background-color: #171717;
+	margin-top: 30px;
+	border: 3px solid #131313;
+}
+  
+ 
+.content2{
+
+	margin-top: 50px;
+	margin-left: 100px;
+	padding-bottom: 50px;
+	width: 700px;
+	height: 100%;
+	background-color: #171717;
+	padding-top: 70px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.control {
+	font-family: arial;
+	display: inline-block;
+	position: relative;
+	padding-left: 29px;
+	margin-bottom: 7px;
+	padding-top: 3px;
+	cursor: pointer;
+	font-size: 19px;
+	display: inline;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control_indicator {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background: #e6e6e6;
+	border: 0px solid #000000;
+	border-radius: undefinedpx;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+	background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+	background: #ffc100;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+	background: #ffc100;
+}
+.control input:disabled ~ .control_indicator {
+	background: #e6e6e6;
+	opacity: 2;
+	pointer-events: none;
+}
+.control_indicator:after {
+	box-sizing: unset;
+	content: '';
+	position: absolute;
+	display: none;
+}
+.control input:checked ~ .control_indicator:after {
+	display: block;
+}
+.control-radio .control_indicator {
+	border-radius: 50%;
+}
+
+.control-radio .control_indicator:after {
+	left: 7px;
+	top: 7px;
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: #ffffff;
+	transition: background 250ms;
+}
+.control-radio input:disabled ~ .control_indicator:after {
+	background: #7b7b7b;
+}.control-radio .control_indicator::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4.604rem;
+	height: 4.5rem;
+	margin-left: -1.3rem;
+	margin-top: -1.3rem;
+	background: #ffc100;
+	border-radius: 3rem;
+	opacity: 0.6;
+	z-index: 99999;
+	transform: scale(0);
+}
+
+
+.ww-controls p{
+	margin-top: 30px;
+}
+
+.pcontrols
+{
+	display: inline;
+}
+
+.group__right p{
+	display: inline;
+}
+
+.content2 h2{
+	margin-top: -20px;
+}
+
+.content2{
+	display: inline-block;
+	
+}
+
+.inputheight, .inputweight{
+	margin-left: 20px;
+}
+
+.control-group{
+	text-align: right;
+	margin-top: 30px;
+	margin-left: 145px;
+	width: 280px;
+}
+
+.ww-controls{
+	text-align: right;
+	margin-left: 170px;
+	width: 280px;
+}
+
+.control {
+	margin-left: 30px;
+}
+
+.btn3{
+	display: inline-block;
+	text-align: center;
+	width: 700px;
+	padding-top: 40px;
+}
+
+.btn3 button{
+	width:158px;
+	height: 35px;
+	margin-left: 40px;
+}
+
+.barriersBMI{
+	
+	margin-left: 295px;
+	width: 500px;
+	margin-top: 40px;
+}
+
+.barriersBMI ul{
+	list-style-type: none;
+}
+
+#down_description
+{
+	margin: 0 auto;
+	width: 900px;
+	height: 60px;
+}
+
+p.copyright
+{
+	margin: 15px 30px 35px 30px;
+	text-align: center;
+	font-family: FranklinGothic;
+	font-size: 12px;
+	color: #cfcfcf;
+}
+
+hr.linia-dol
+{
+	border-color: rgba(255, 180, 0, 0.5);
+}
+
+
+
+.wrapper2
+{
+	width: 900px;
+	margin: 0 auto;
+	/*box-shadow: 0px 1px 6px 3px rgba(173,173,173,0.5);*/
+	margin-bottom: 35px;
+	margin-bottom: 40px;
+	height: 660px;
+	margin-top: -50px;
+}
+
+.wcontent1
+{
+	margin-top: 30px;
+	width: 450px;
+	height: 300px;
+	margin-right: 30px;
+	background-image: url(../img/news1.jpg);
+	background-color: #edeef0;
+	float: left;
+}
+
+.wcontent2
+{
+	margin-top: 30px;
+	width: 420px;
+	height: 630px;
+	background-image: url(../img/news2.jpg);
+	background-color: #edeef0;
+	float: right;
+}
+
+.wcontent3
+{
+	margin-top: 30px;
+	width: 450px;
+	height: 300px;
+	margin-right: 30px;
+	background-image: url(../img/news3.jpg);
+	background-color: #edeef0;
+	float: left;
 }
