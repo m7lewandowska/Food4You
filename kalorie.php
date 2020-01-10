@@ -59,18 +59,63 @@
             <button class="btn2">DODAJ</button>
 
             <div class="listofmeals">
-                
+
+            <div class="table100">
+            <table class="table table-striped">
+              <thead>
+                <tr class="table100-head">
+                  <th class="column1">Nazwa</th>
+                  <th class="column2">Kalorie</th>
+                  <th class="column3">Białko</th>
+                  <th class="column4">Tłuszcz</th>
+                  <th class="column5">Węglowodany</th>
+                  <th class="column6">Akcje</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="column1">Ryż biały</td>
+                <td class="column2">344</td>
+                <td class="column3">5.7</td>
+                <td class="column4">0.7</td>
+                <td class="column5">78.9</td>
+                <td class="column6"><button class="btn-primary">Usuń</button></td>
+              </tr>
+              
+            <tr>
+                <td class="column1">Ryż biały</td>
+                <td class="column2">344</td>
+                <td class="column3">5.7</td>
+                <td class="column4">0.7</td>
+                <td class="column5">78.9</td>
+                <td class="column6"><button class="btn-primary">Usuń</button></td>
+            </tr>
+
+            <tr>
+                <td class="column1">Ryż biały</td>
+                <td class="column2">344</td>
+                <td class="column3">5.7</td>
+                <td class="column4">0.7</td>
+                <td class="column5">78.9</td>
+                <td class="column6"><button class="btn-primary">Usuń</button></td>
+            </tr>
+
+              </tbody>
+            </table>
+           
+            </div>
             </div>
           </div>
 
-          <div class="tab">II POSIŁEK
+          <!-- <div class="tab">II POSIŁEK
             <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
               <button class="btn2">DODAJ</button>
 
-              <div class="listofmeals">
-                  
-              </div>
-          </div>
+            <div class="listofmeals">
+                            
+                          
+            </div>
+          </div> -->
 
 
           <div style="overflow:auto;">
@@ -99,8 +144,6 @@
     function formGenerate() {
       document.getElementById("form1").style.display = "block";
     }
-
-
 
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
