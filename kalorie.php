@@ -34,6 +34,8 @@
   <div class="wrapper">
 
     <div class="content1">
+    <h2 class="calculator-title">Kalkulator kalorii</h2>
+
       <p>Ilość posiłków: </p>
         <select class="mealsnumber">
           <?php
@@ -52,8 +54,6 @@
     <div id="form1" style="display:none;">
       
       <form id="regForm" action="/action_page.php">
-          <h2>KALKULATOR KALORII</h2>
-
           <div class="tab">I POSIŁEK
             <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
             <button class="btn2">DODAJ</button>

@@ -54,11 +54,14 @@ ul.linki li{
 	margin-top: 50px;
 	margin-left: 100px;
 	width: 700px;
-	height: 120px;
+	height: 180px;
 	background-color: #171717;
-	padding-top: 70px;
+	padding-top: 50px;
 	overflow: hidden;
 	position: relative;
+}
+.content1 h2{
+	padding-bottom: 30px;
 }
 .content1 p {
 	display: inline;
@@ -113,7 +116,7 @@ ul.linki li{
 	cursor: pointer;
 }
 #regForm {
-	padding: 40px;
+	padding: 0px 40px 40px 40px;
 }
 h2 {
 	text-align: center;
