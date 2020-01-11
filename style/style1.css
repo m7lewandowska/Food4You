@@ -49,6 +49,7 @@ ul.linki li{
 	margin-bottom: 40px;
 	padding-bottom: 50px;
 	overflow: hidden;
+	position:relative;
 }
 .content1{
 	margin-top: 50px;
@@ -73,6 +74,7 @@ ul.linki li{
 	display: inline;
 }
 .btn{
+	size: 13px;
 	display: block;
 	margin-left: 290px;
 	margin-top: 20px;
@@ -84,6 +86,7 @@ ul.linki li{
 	width: 700px;
 	overflow: hidden;
 	background-color: #171717;
+	position:relative;
 }
 .nav{
 	height: 35px;
@@ -117,6 +120,8 @@ ul.linki li{
 }
 #regForm {
 	padding: 0px 40px 40px 40px;
+	height: 100%;
+	position:relative;
 }
 h2 {
 	text-align: center;
@@ -183,6 +188,7 @@ button:hover {
 	background-color: #4CAF50;
 }
 .listofmeals{
+	position:relative;
 	height: 380px;
 	overflow: hidden;
 	font-size: 13px;
@@ -191,6 +197,14 @@ button:hover {
 	background-color: #171717;
 	margin-top: 30px;
 	border: 3px solid #131313;
+}
+#summary{
+	margin-left: 100px;
+	width: 700px;
+	overflow: hidden;
+	background-color: #171717;
+	position:relative;
+	margin-top: 30px;
 }
 .content2{
 	margin-top: 50px;
@@ -204,7 +218,6 @@ button:hover {
 	position: relative;
 }
 .control {
-	font-family: arial;
 	display: inline-block;
 	position: relative;
 	padding-left: 29px;
@@ -349,12 +362,16 @@ button:hover {
 	margin: 0 auto;
 	width: 900px;
 	height: 60px;
+	clear: both;
+	bottom: 0px;
+	
 }
 p.copyright {
 	margin: 15px 30px 35px 30px;
 	text-align: center;
 	font-size: 12px;
 	color: #cfcfcf;
+
 }
 hr.linia-dol {
 	border-color: rgba(255, 180, 0, 0.5);
@@ -475,23 +492,18 @@ table td.r, table th.r {
 	text-align: center;
 }
 .table100-head th{
-	font-family: OpenSans-Regular;
-	font-size: 18px;
 	color: #fff;
 	line-height: 1.2;
-	font-weight: unset;
 	text-align: center;
 	padding-left: 35px;
 }
+
 tbody tr:nth-child(even) {
 	background-color: #131313;
 }
 tbody tr {
-	font-family: OpenSans-Regular;
-	font-size: 15px;
 	color: #CFCFCF;
 	line-height: 1.2;
-	font-weight: unset;
 }
 .column1 {
 	width: 260px;

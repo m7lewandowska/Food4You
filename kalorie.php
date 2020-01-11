@@ -35,106 +35,124 @@
   <div class="wrapper">
 
     <div class="content1">
-    <h2 class="calculator-title">Kalkulator kalorii</h2>
+      <h2 class="calculator-title">Kalkulator kalorii</h2>
 
-      <p>Ilość posiłków: </p>
-        <select class="mealsnumber">
-          <?php
-              for ($i=1; $i<=10; $i++)
-              {
-                  ?>
-                      <option value="<?php echo $i;?>"><?php echo $i;?></option>
-                  <?php
-              }
-                  ?>
-        </select>
+        <p>Ilość posiłków: </p>
+          <select class="mealsnumber">
+            <?php
+                for ($i = 1;$i <= 10;$i++)
+                {
+                ?>
+                                  <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                              <?php
+                }
+            ?>
+          </select>
 
-        <button onclick="formGenerate()" class="btn">Generuj</button>
+          <button onclick="formGenerate()" class="btn">Generuj</button>
     </div>
+
+    <div id="summary" style="display:none;">
+          <div class="table200">
+                <table>
+                  <thead>
+                    <tr class="table100-head">
+                      <th class="column1">Nazwa</th>
+                      <th class="column2">Kalorie</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="column1">Ryż biały</td>
+                    <td class="column2">344</td>
+                  </tr>
+              </table>
+          </div>
+      </div>
 
     <div id="form1" style="display:none;">
       
-      <form id="regForm" action="/action_page.php">
-          <div class="tab">I POSIŁEK
-            <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
-            <button class="btn2">DODAJ</button>
+          <form id="regForm" action="/action_page.php">
+              <div class="tab">I POSIŁEK
+                <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
+                <button class="btn2">DODAJ</button>
 
-            <div class="listofmeals">
+                    <div class="listofmeals">
 
-            <div class="table100">
-            <table class="table table-striped">
-              <thead>
-                <tr class="table100-head">
-                  <th class="column1">Nazwa</th>
-                  <th class="column2">Kalorie</th>
-                  <th class="column3">Białko</th>
-                  <th class="column4">Tłuszcz</th>
-                  <th class="column5">Węglowodany</th>
-                  <th class="column6">Akcje</th>
-                </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td class="column1">Ryż biały</td>
-                <td class="column2">344</td>
-                <td class="column3">5.7</td>
-                <td class="column4">0.7</td>
-                <td class="column5">78.9</td>
-                <td class="column6"><button class="btn-primary">Usuń</button></td>
-              </tr>
-              
-            <tr>
-                <td class="column1">Ryż biały</td>
-                <td class="column2">344</td>
-                <td class="column3">5.7</td>
-                <td class="column4">0.7</td>
-                <td class="column5">78.9</td>
-                <td class="column6"><button class="btn-primary">Usuń</button></td>
-            </tr>
+                          <div class="table100">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr class="table100-head">
+                                  <th class="column1">Nazwa</th>
+                                  <th class="column2">Kalorie</th>
+                                  <th class="column3">Białko</th>
+                                  <th class="column4">Tłuszcz</th>
+                                  <th class="column5">Węglowodany</th>
+                                  <th class="column6">Akcje</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td class="column1">Ryż biały</td>
+                                <td class="column2">344</td>
+                                <td class="column3">5.7</td>
+                                <td class="column4">0.7</td>
+                                <td class="column5">78.9</td>
+                                <td class="column6"><button class="btn-primary">Usuń</button></td>
+                              </tr>
+                              
+                              <tr>
+                                  <td class="column1">Ryż biały</td>
+                                  <td class="column2">344</td>
+                                  <td class="column3">5.7</td>
+                                  <td class="column4">0.7</td>
+                                  <td class="column5">78.9</td>
+                                  <td class="column6"><button class="btn-primary">Usuń</button></td>
+                              </tr>
 
-            <tr>
-                <td class="column1">Ryż biały</td>
-                <td class="column2">344</td>
-                <td class="column3">5.7</td>
-                <td class="column4">0.7</td>
-                <td class="column5">78.9</td>
-                <td class="column6"><button class="btn-primary">Usuń</button></td>
-            </tr>
+                              <tr>
+                                  <td class="column1">Ryż biały</td>
+                                  <td class="column2">344</td>
+                                  <td class="column3">5.7</td>
+                                  <td class="column4">0.7</td>
+                                  <td class="column5">78.9</td>
+                                  <td class="column6"><button class="btn-primary">Usuń</button></td>
+                              </tr>
 
-              </tbody>
-            </table>
-           
-            </div>
-            </div>
-          </div>
+                                </tbody>
+                            </table>
+                          </div>
+                    </div>
+              </div>
 
-          <!-- <div class="tab">II POSIŁEK
-            <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
-              <button class="btn2">DODAJ</button>
+            
+              <!-- <div class="tab">II POSIŁEK
+                <p><input placeholder="wybierz składnik" oninput="this.className = ''" name="skladnik"></p>
+                  <button class="btn2">DODAJ</button>
 
-            <div class="listofmeals">
-                            
-                          
-            </div>
-          </div> -->
+                <div class="listofmeals">
+                                
+                              
+                </div>
+              </div> -->
 
 
-          <div style="overflow:auto;">
-            <div style="float:right;">
-              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-            </div>
-          </div>
+              <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+              </div>
 
-          <!-- Circles which indicates the steps of the form: -->
-          <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-          </div>
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
 
-      </form>
+          </form>
 
     </div>
 
@@ -144,6 +162,8 @@
   <script>
     function formGenerate() {
       document.getElementById("form1").style.display = "block";
+      //document.getElementById("summary").style.display = "block";
+
     }
 
     var currentTab = 0; // Current tab is set to be the first tab (0)
@@ -224,7 +244,9 @@ function fixStepIndicator(n) {
 
 <div id="down_description">
 		<hr class="linia-dol">
-		<p class="copyright">Copyright &copy; by Marta Lewandowska</p>
+    <p class="copyright">Copyright &copy; by Marta Lewandowska</p>
+  
 </div>
+
 </body>
 </html>
