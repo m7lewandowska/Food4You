@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+<link rel="shortcut icon" href="img/icon.png">
 <title>Wskaźnik BMI | Food4You</title>
 <meta charset= "utf-8">
 <meta name="description" content="Strona">
