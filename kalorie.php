@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<title>Strona główna | Food4You</title>
+<title>Kalkulator kalorii| Food4You</title>
 <meta charset= "utf-8">
 <meta name="description" content="Strona">
 <meta name="keywords" content="Informatyka">
