@@ -40,13 +40,12 @@
         <p>Ilość posiłków: </p>
           <select class="mealsnumber">
             <?php
-                for ($i = 1;$i <= 10;$i++)
-                {
-                ?>
+for ($i = 1;$i <= 10;$i++) {
+?>
                                   <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                               <?php
-                }
-            ?>
+}
+?>
           </select>
 
           <button onclick="formGenerate()" class="btn">Generuj</button>
@@ -80,6 +79,7 @@
                     <td class="column2">84</td>
                   </tr>
               </table>
+              <p class="remember"><span style="color: #ffb300;">Pamiętaj!</span> Każdy organizm jest inny! Podane przez kalkulator kalorii wartości mają charakter orientacyjny i pomocniczy. Żadne narzędzie nie zastąpi konsultacji ze specjalistą! Zamieszczone informacje nie mogą być podstawą do przeprowadzenia samodiagnozy czy leczenia.</p>
           </div>
       </div>
 

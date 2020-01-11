@@ -34,54 +34,61 @@
 
   <div class="wrapper">
     <div class="content2">
-    <form action="/" method="post">      
-          <h2 class="calculator-title">Oblicz swój wskaźnik <strong>BMI</strong></h2>
-         
-          <div class="group__right">
-            <div class="control-group">
-              <p>Płeć:</p>
-              <label class="control control-radio">K
-                  <input type="radio" name="radio" checked="checked" />
-                  <div class="control_indicator"></div>
-              </label>
+      <div>
+        <form>      
+              <h2 class="calculator-title">Oblicz swój wskaźnik <strong>BMI</strong></h2>
+            
+              <div class="group__right">
+                <div class="control-group">
+                  <p>Płeć:</p>
+                  <label class="control control-radio">K
+                      <input type="radio" name="radio" checked="checked" />
+                      <div class="control_indicator"></div>
+                  </label>
 
-              <label class="control control-radio">M
-                  <input type="radio" name="radio" />
-                  <div class="control_indicator"></div>
-              </label>
-            </div>
+                  <label class="control control-radio">M
+                      <input type="radio" name="radio" />
+                      <div class="control_indicator"></div>
+                  </label>
+                </div>
 
-            <div class="ww-controls">
-              <p>Waga:</p>
-              <input type="number" class="inputweight" name="weight" value="">
-              <br>
-              <p>Wzrost:</p>
-              <input type="text" class="inputheight" name="height" value="">
-            </div>
+                <div class="ww-controls">
+                  <p>Waga:</p>
+                  <input type="number" class="inputweight" name="weight" value="">
+                  <br>
+                  <p>Wzrost:</p>
+                  <input type="text" class="inputheight" name="height" value="">
+                </div>
 
-            <div class="btn3">
-              <button>OBLICZ</button>
-            </div>
-          </div>
+                <div class="btn3">
+                  <button onclick="countBMI()">OBLICZ</button>
+                </div>
+              </div>
 
-          <div class="barriersBMI">
-            <div class="group__right">
-              <p class="calculator-info__title"><strong>Zakresy wartości BMI:</strong></p>
-              <ul class="calculator-info__list">
-                <li>mniej niż 16 - wygłodzenie</li>
-                <li>16 - 16.99 - wychudzenie</li>
-                <li>17 - 18.49 - niedowaga</li>
-                <li>18.5 - 24.99 - wartość prawidłowa</li>
-                <li>25 - 29.99 - nadwaga</li>
-                <li>30 - 34.99 - I stopień otyłości</li>
-                <li>35 - 39.99 - II stopień otyłości</li>
-                <li>powyżej 40 - otyłość skrajna</li>
-              </ul>
-            </div>
-          </div>
+              <div class="barriersBMI">
+                <div class="group__right">
+                  <p class="calculator-info__title"><strong>Zakresy wartości BMI:</strong></p>
+                  <ul class="calculator-info__list">
+                    <li>mniej niż 16 - wygłodzenie</li>
+                    <li>16 - 16.99 - wychudzenie</li>
+                    <li>17 - 18.49 - niedowaga</li>
+                    <li>18.5 - 24.99 - wartość prawidłowa</li>
+                    <li>25 - 29.99 - nadwaga</li>
+                    <li>30 - 34.99 - I stopień otyłości</li>
+                    <li>35 - 39.99 - II stopień otyłości</li>
+                    <li>powyżej 40 - otyłość skrajna</li>
+                  </ul>
+                </div>
 
-    </form>
+              </div>
 
+        </form>
+      </div>
+
+      <div id="bmisummary" style="display: none;">
+          <h2>Wskaźnik BMI wynosi: </h2>
+          <p id="wskbmi">19.59</p>
+      </div>
     </div>
 
   </div>
@@ -102,7 +109,8 @@
   <div id="down_description">
 		<hr class="linia-dol">
 		<p class="copyright">Copyright &copy; by Marta Lewandowska</p>
-	</div>
+  </div>
+  
 
 </body>
 </html>
