@@ -53,18 +53,31 @@
     </div>
 
     <div id="summary" style="display:none;">
+    <h2>Podsumowanie</h2>
           <div class="table200">
                 <table>
                   <thead>
-                    <tr class="table100-head">
+                    <tr class="table200-head">
                       <th class="column1">Nazwa</th>
-                      <th class="column2">Kalorie</th>
+                      <th class="column2">Wartości</th>
                     </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td class="column1">Ryż biały</td>
+                    <td class="column1">Kalorie</td>
                     <td class="column2">344</td>
+                  </tr>
+                  <tr>
+                    <td class="column1">Białko</td>
+                    <td class="column2">255</td>
+                  </tr>
+                  <tr>
+                    <td class="column1">Tłuszcz</td>
+                    <td class="column2">123</td>
+                  </tr>
+                  <tr>
+                    <td class="column1">Weglowodany</td>
+                    <td class="column2">84</td>
                   </tr>
               </table>
           </div>
@@ -161,8 +174,8 @@
 
   <script>
     function formGenerate() {
-      document.getElementById("form1").style.display = "block";
-      //document.getElementById("summary").style.display = "block";
+      //document.getElementById("form1").style.display = "block";
+      document.getElementById("summary").style.display = "block";
 
     }
 
