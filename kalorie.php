@@ -84,7 +84,7 @@ for ($i = 1;$i <= 10;$i++) {
           </div>
       </div>
 
-    <div id="form1" style="display:none;">
+    <div id="form1">
       
           <form id="regForm" action="/action_page.php">
               <div class="tab">I POSIŁEK
@@ -101,7 +101,7 @@ for ($i = 1;$i <= 10;$i++) {
                                   <th class="column2">Kalorie</th>
                                   <th class="column3">Białko</th>
                                   <th class="column4">Tłuszcz</th>
-                                  <th class="column5">Węglowodany</th>
+                                  <th class="column5">Węgle</th>
                                   <th class="column6">Akcje</th>
                                 </tr>
                               </thead>
