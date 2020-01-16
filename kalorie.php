@@ -8,7 +8,8 @@
 <meta name="keywords" content="Informatyka">
 <meta name="robots" content="all">
 <link rel="stylesheet" type="text/css" href="style/style1.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="style/mobile1.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 </head>
 <body>
 
@@ -83,7 +84,7 @@ for ($i = 1;$i <= 10;$i++) {
           </div>
       </div>
 
-    <div id="form1" style="display:none;">
+    <div id="form1">
       
           <form id="regForm" action="/action_page.php">
               <div class="tab">I POSIŁEK
@@ -100,7 +101,7 @@ for ($i = 1;$i <= 10;$i++) {
                                   <th class="column2">Kalorie</th>
                                   <th class="column3">Białko</th>
                                   <th class="column4">Tłuszcz</th>
-                                  <th class="column5">Węglowodany</th>
+                                  <th class="column5">Węgle</th>
                                   <th class="column6">Akcje</th>
                                 </tr>
                               </thead>
