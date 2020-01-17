@@ -55,10 +55,10 @@
 
                 <div class="ww-controls">
                   <p>Waga:</p>
-                  <input type="number" class="inputweight" name="weight" value="">
+                  <input type="number" class="inputweight" name="weight" placeholder="kg" value="">
                   <br>
                   <p>Wzrost:</p>
-                  <input type="text" class="inputheight" name="height" value="">
+                  <input type="text" class="inputheight" name="height" placeholder="cm" value="">
                 </div>
 
                 <div class="btn3">
